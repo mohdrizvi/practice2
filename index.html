@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color:grey;
+
+        }
+       
+        .container {
+            width: 900px;
+            margin: 0 auto;
+            line-height: 2rem;
+        }
+        .form{
+            background-color: rgb(57, 48, 83);
+            max-width: 500px;
+            padding: 20px;
+            margin: 0 auto;
+            margin-top:50px;
+            box-shadow: 5px 5px 10px white;
+            color: white;
+
+        }
+        .form ,h1 {
+            line-height: 1.5rem;
+        }
+        p{
+            margin-top: 5px;
+        }
+
+        .lastname{
+            display:flex;
+            flex-direction:row;
+            justify-content:space-around;
+        }
+        .numbers{
+            display:flex;
+            justify-content:space-around; 
+            
+        }
+        .cities{
+            display:flex;
+            justify-content:space-around;  
+        }
+        .city{
+            display:flex;
+            justify-content:space-around;
+            flex-direction: column;
+            margin-right: 55px;
+        }
+       
+        .button{
+            text-align:center;
+        }
+      
+       
+
+    </style>
+</head>
+<body>
+  <div class="container">
+    <div class="form">
+     <h1>  Job Seekers Application form</h1>
+     <p> Looking for a job? Fill in the form below with the required information.</p>
+     <div class="lastname">
+
+         <div class="name">
+             <label for="first name">First Name</label>
+             <input id="first name"name="first name"placeholder=" Enter first name">
+            </div>
+            <div class="last-name">
+                <label for="last name">Last Name</label>
+                <input id="last name"name="first name"placeholder=" Enter Last name">
+            </div>
+        </div>
+           <div class="email">
+            <label for="email">Email</label><br>
+            <input type="email" id="email"name="email"placeholder=" Enter Email">
+           </div>
+           <div class="address">
+            <label for="address">Address</label><br>
+           <textarea
+           id="address"
+           name="address"
+           row="4"
+           cols="35"
+           placeholder="Enter Your Address">
+           </textarea>
+           <div class="cities">
+           <div class="city">
+            <label for="city">City</label>
+            <input id="city"name="city"placeholder=" Enter Your City"> 
+           </div>
+           <div class="city">
+            <label for="region">region</label>
+            <input id="region"name="region"placeholder=" Enter Your region">
+           </div>
+        </div>
+           <div class="zipcode">
+            <label for="zip code">Postal/Zip Code</label><br>
+            <input id="zip code"name="zip code"placeholder=" Enter zip code">
+           </div>
+           <div class="numbers">
+           <div class="number">
+            <label for="number">Phone Number</label>
+            <input id="number"name="number">
+           </div>
+          <div class="alternate">
+            <label for="alternate ">Alternate Number</label>
+            <input id="alternate"name="alternate">
+          </div>
+        </div>
+          <div class="select">
+            <label for="select"> Position that you are applying for</label><br>
+            <select>
+                <option value="job">Web Developer</option>
+                <option value="job">manager</option>
+                <option value="job">senior Manager</option>
+                <option value="job">Web designer</option>
+            </select>
+          </div>
+          <div class="radio">
+            <label for="Google Search">
+                <input type="radio" name="radio">Google Search
+            </label><br>
+            <label for="Online Advert">
+                <input type="radio" name="radio">Online Advert
+            </label><br>
+            <label for="Friend Recommendations">
+                <input type="radio" name="radio">Friend Recommendation
+            </label><br>
+            <label for="Other">
+                <input type="radio" name="radio">Other
+            </label>
+           </div>
+    </div>
+    <div class="button">
+        <button type="submit">Apply Now</button>
+    </div>
+  </div>
+</body>
+</html>
